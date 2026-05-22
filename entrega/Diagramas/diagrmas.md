@@ -24,7 +24,6 @@ flowchart TB
     Houston --> Tech
 ```
 
-````
 ## 2. Arquitectura AS-IS
 
 ```mermaid
@@ -60,8 +59,8 @@ flowchart LR
 
     Gov --> LN
     Gov --> MFA
-
     Houston --> LN
+
 ---
 
 ## 4. BPMN AS-IS
@@ -84,7 +83,7 @@ flowchart TD
     E --> F
     F --> G
     G --> H
----
+```
 
 ## 5. BPMN TO-BE
 
@@ -109,7 +108,7 @@ flowchart TD
     F --> G
     G --> E
     E --> H
----
+```
 
 ## 6. ERD Simplificado
 
@@ -121,7 +120,7 @@ erDiagram
     SALES_ORDER ||--o{ FACTURA : produce
     INVENTARIO ||--o{ SALES_ORDER : abastece
     BODEGA ||--o{ INVENTARIO : contiene
----
+```
 
 ## 7. Flujo de Datos
 
@@ -137,7 +136,7 @@ flowchart LR
     LN --> Facturacion
     LN --> PowerBI
     LN --> OrderTrack
----
+```
 
 ## 8. Diagrama de Integraciones
 
@@ -153,7 +152,7 @@ flowchart TB
     LN --> FE
     LN --> OT
     LN --> BI
----
+```
 
 ## 9. Infraestructura Tecnológica
 
@@ -174,7 +173,7 @@ flowchart TB
     Cali --> Azure
     Barranquilla --> Azure
     Houston --> Azure
----
+```
 
 ## 10. Gobierno TI
 
@@ -184,7 +183,7 @@ flowchart TD
     DirectorTI --> HoustonIT[IT Houston]
     DirectorTI --> Contratista[Soporte Local]
     DirectorTI --> Datos[Responsable Datos]
----
+```
 
 ## 11. Gestión de Incidentes
 
@@ -205,7 +204,7 @@ flowchart TD
 
     D --> F
     E --> F
----
+```
 
 ## 12. Matriz STRIDE
 
@@ -224,7 +223,7 @@ flowchart LR
     I --> Clientes
     D --> Operación
     E --> Accesos
----
+```
 
 ## 13. Roadmap de Transformación
 
@@ -246,7 +245,7 @@ gantt
     section Fase 3
     Dashboards Power BI :c1, 2026-06-01, 60d
     Gobierno TI :c2, 2026-06-15, 60d
----
+```
 
 ## 14. Heatmap de Riesgos
 
@@ -264,7 +263,7 @@ quadrantChart
     ReorderPoint: [0.8, 0.8]
     SMI: [0.7, 0.6]
     FacturacionManual: [0.6, 0.7]
----
+```
 
 ## 15. Dependencias Críticas
 
@@ -276,7 +275,7 @@ flowchart LR
     ERP --> OrderTrack
     ReorderPoint --> ERP
     Excel --> ReorderPoint
----
+```
 
 ## 16. Single Source of Truth
 
@@ -287,7 +286,7 @@ flowchart TD
     Inventario --> LN
     Facturas --> Facturacion
     Reportes --> PowerBI
----
+```
 
 ## 17. Gestión Alta/Baja de Usuarios
 
@@ -303,7 +302,7 @@ flowchart TD
     B --> C
     C --> D
     D --> E
----
+```
 
 ## 18. Continuidad Operativa
 
@@ -319,7 +318,7 @@ flowchart TD
     B --> C
     C --> D
     D --> E
----
+```
 
 ## 19. KPI Dashboard Ejecutivo
 
@@ -329,7 +328,7 @@ pie title Estado Objetivos TO-BE
     "Procesos manuales" : 25
     "Gobierno TI" : 15
     "Seguridad" : 20
----
+```
 
 ## 20. Capa Informal de Operación
 
