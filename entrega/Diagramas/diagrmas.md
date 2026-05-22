@@ -64,6 +64,7 @@ flowchart LR
 
 ---
 
+
 ## 4. BPMN AS-IS
 
 
@@ -85,12 +86,10 @@ flowchart TD
     E --> F
     F --> G
     G --> H
-
 ---
 
 ## 5. BPMN TO-BE
 
-```md
 ```mermaid
 flowchart TD
     A[Cliente solicita cotización]
@@ -112,15 +111,10 @@ flowchart TD
     F --> G
     G --> E
     E --> H
-````
-
-````
-
 ---
 
 ## 6. ERD Simplificado
 
-```md
 ```mermaid
 erDiagram
     CLIENTE ||--o{ COTIZACION : genera
@@ -129,15 +123,10 @@ erDiagram
     SALES_ORDER ||--o{ FACTURA : produce
     INVENTARIO ||--o{ SALES_ORDER : abastece
     BODEGA ||--o{ INVENTARIO : contiene
-````
-
-````
-
 ---
 
 ## 7. Flujo de Datos
 
-```md
 ```mermaid
 flowchart LR
     Dynamics[Dynamics 365]
@@ -150,15 +139,10 @@ flowchart LR
     LN --> Facturacion
     LN --> PowerBI
     LN --> OrderTrack
-````
-
-````
-
 ---
 
 ## 8. Diagrama de Integraciones
 
-```md
 ```mermaid
 flowchart TB
     Dynamics[Dynamics CRM]
@@ -171,15 +155,10 @@ flowchart TB
     LN --> FE
     LN --> OT
     LN --> BI
-````
-
-````
-
 ---
 
 ## 9. Infraestructura Tecnológica
 
-```md
 ```mermaid
 flowchart TB
     subgraph Colombia
@@ -197,30 +176,20 @@ flowchart TB
     Cali --> Azure
     Barranquilla --> Azure
     Houston --> Azure
-````
-
-````
-
 ---
 
 ## 10. Gobierno TI
 
-```md
 ```mermaid
 flowchart TD
     Gerencia --> DirectorTI[Director Técnico]
     DirectorTI --> HoustonIT[IT Houston]
     DirectorTI --> Contratista[Soporte Local]
     DirectorTI --> Datos[Responsable Datos]
-````
-
-````
-
 ---
 
 ## 11. Gestión de Incidentes
 
-```md
 ```mermaid
 flowchart TD
     A[Usuario reporta incidente]
@@ -238,15 +207,10 @@ flowchart TD
 
     D --> F
     E --> F
-````
-
-````
-
 ---
 
 ## 12. Matriz STRIDE
 
-```md
 ```mermaid
 flowchart LR
     S[Spoofing]
@@ -262,15 +226,10 @@ flowchart LR
     I --> Clientes
     D --> Operación
     E --> Accesos
-````
-
-````
-
 ---
 
 ## 13. Roadmap de Transformación
 
-```md
 ```mermaid
 gantt
     title Roadmap Bray Controls Andina
@@ -289,15 +248,10 @@ gantt
     section Fase 3
     Dashboards Power BI :c1, 2026-06-01, 60d
     Gobierno TI :c2, 2026-06-15, 60d
-````
-
-````
-
 ---
 
 ## 14. Heatmap de Riesgos
 
-```md
 ```mermaid
 quadrantChart
     title Riesgos Bray Controls Andina
@@ -312,15 +266,10 @@ quadrantChart
     ReorderPoint: [0.8, 0.8]
     SMI: [0.7, 0.6]
     FacturacionManual: [0.6, 0.7]
-````
-
-````
-
 ---
 
 ## 15. Dependencias Críticas
 
-```md
 ```mermaid
 flowchart LR
     Houston --> ERP
@@ -329,15 +278,10 @@ flowchart LR
     ERP --> OrderTrack
     ReorderPoint --> ERP
     Excel --> ReorderPoint
-````
-
-````
-
 ---
 
 ## 16. Single Source of Truth
 
-```md
 ```mermaid
 flowchart TD
     Clientes --> Dynamics
@@ -345,15 +289,10 @@ flowchart TD
     Inventario --> LN
     Facturas --> Facturacion
     Reportes --> PowerBI
-````
-
-````
-
 ---
 
 ## 17. Gestión Alta/Baja de Usuarios
 
-```md
 ```mermaid
 flowchart TD
     A[RRHH notifica]
@@ -366,15 +305,10 @@ flowchart TD
     B --> C
     C --> D
     D --> E
-````
-
-````
-
 ---
 
 ## 18. Continuidad Operativa
 
-```md
 ```mermaid
 flowchart TD
     A[Caída ERP]
@@ -387,30 +321,20 @@ flowchart TD
     B --> C
     C --> D
     D --> E
-````
-
-````
-
 ---
 
 ## 19. KPI Dashboard Ejecutivo
 
-```md
 ```mermaid
 pie title Estado Objetivos TO-BE
     "Integración completada" : 40
     "Procesos manuales" : 25
     "Gobierno TI" : 15
     "Seguridad" : 20
-````
-
-````
-
 ---
 
 ## 20. Capa Informal de Operación
 
-```md
 ```mermaid
 flowchart LR
     Outlook[Correos Outlook]
@@ -423,7 +347,6 @@ flowchart LR
     Outlook --> Personas
     Personas --> Excel
     Excel --> ERP
-````
 
 ```
 ```
