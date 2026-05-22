@@ -24,6 +24,7 @@ flowchart TB
     Houston --> Tech
 ```
 
+````
 ## 2. Arquitectura AS-IS
 
 ```mermaid
