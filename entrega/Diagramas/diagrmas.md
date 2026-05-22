@@ -2,7 +2,6 @@
 
 ## 1. Mapa General de Arquitectura Empresarial
 
-````md
 ```mermaid
 flowchart TB
     Negocio[Procesos de Negocio]
@@ -23,11 +22,7 @@ flowchart TB
     Houston[Houston Corporativo]
     Houston --> Apps
     Houston --> Tech
-````
-
-````
-
----
+```
 
 ## 2. Arquitectura AS-IS
 
