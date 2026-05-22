@@ -63,9 +63,7 @@ flowchart LR
     Houston --> LN
 ---
 
-
 ## 4. BPMN AS-IS
-
 
 ```mermaid
 flowchart TD
