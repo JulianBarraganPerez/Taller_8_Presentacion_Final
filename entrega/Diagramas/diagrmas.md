@@ -26,7 +26,6 @@ flowchart TB
 
 ## 2. Arquitectura AS-IS
 
-```md
 ```mermaid
 flowchart LR
     Cliente --> Ventas
@@ -40,15 +39,11 @@ flowchart LR
 
     Houston --> ERP
     Houston --> Azure
-````
-
-````
-
----
+```
 
 ## 3. Arquitectura TO-BE
 
-```md
+
 ```mermaid
 flowchart LR
     Cliente --> Dynamics[Dynamics 365]
@@ -66,15 +61,12 @@ flowchart LR
     Gov --> MFA
 
     Houston --> LN
-````
-
-````
 
 ---
 
 ## 4. BPMN AS-IS
 
-```md
+
 ```mermaid
 flowchart TD
     A[Cliente solicita cotización]
@@ -93,9 +85,6 @@ flowchart TD
     E --> F
     F --> G
     G --> H
-````
-
-````
 
 ---
 
